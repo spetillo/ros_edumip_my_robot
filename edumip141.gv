@@ -1,0 +1,11 @@
+digraph G {
+node [shape=box];
+"edumip_body" [label="edumip_body"];
+"wheelL" [label="wheelL"];
+"wheelR" [label="wheelR"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"edumip_body" -> "jointL" [label="xyz: -0.035 0 -0.055 \nrpy: 0 -0 0"]
+"jointL" -> "wheelL"
+"edumip_body" -> "jointR" [label="xyz: 0.035 0 -0.055 \nrpy: 0 -0 0"]
+"jointR" -> "wheelR"
+}
